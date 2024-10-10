@@ -2,7 +2,7 @@
     <div class="container">
         <header class="blog-header">
             <br><br>
-            <h2>แสดง figure ทั้งหมด</h2>
+            <h2>แสดง อาวุธปืน ทั้งหมด</h2>
             <!--ค้นหาข้อมูล-->
             <form>
                 <input type="text" v-model="search" placeholder="Search" aria-label="Search Blogs" />
@@ -61,7 +61,7 @@
 <script>
 import BlogsService from '@/services/BlogsService';
 import _ from 'lodash';
-import ScrollMonitor from 'scrollMonitor';
+//import ScrollMonitor from 'scrollMonitor';
 
 const LOAD_NUM = 3;
 let pageWatcher;
@@ -134,7 +134,7 @@ export default {
     },
     beforeUpdated() {
         if (pageWatcher) {
-            pageWatcher.destroy();
+           pageWatcher.destroy();
             pageWatcher = null;
         }
     },
