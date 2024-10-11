@@ -48,7 +48,7 @@
         </transition-group>
 
         <div v-if="filteredBlogs.length === 0 && !loading" class="empty-blog">
-            *** ไม่มีข้อมูล ***
+            * ไม่มีข้อมูล *
         </div>
         <div id="blog-list-bottom">
             <div class="blog-load-finished" v-if="filteredBlogs.length === results.length && results.length > 0">
